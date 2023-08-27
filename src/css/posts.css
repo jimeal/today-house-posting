@@ -1,0 +1,22 @@
+/* POSTING */
+.posting-container {}
+.posting-container .posting-box {}
+.posting-container .posting-box {}
+.posting-container .posting-image {
+  height: 210px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.posting-container .posting-image img {
+  object-fit: cover;
+  object-position: center;
+}
+.posting-container .posting-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  word-break: keep-all;
+  line-height: 1.5;
+}
+

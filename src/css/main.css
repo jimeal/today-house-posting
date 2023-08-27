@@ -1,0 +1,98 @@
+/* MAIN BANNER */
+.main__banner {
+  position: relative;
+}
+.main__banner .swiper-pagination {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  left: auto;
+  width: auto;
+  background-color: rgba(0, 0, 0, .4);
+  color: #fff;
+  border-radius: 3rem;
+  padding: 3px 12px 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.main__banner .swiper-prev,
+.main__banner .swiper-next {
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .25);
+}
+.main__banner .swiper-prev span,
+.main__banner .swiper-next span {
+  font-size: 28px;
+}
+.main__banner .swiper-prev {
+  left: 16px;
+}
+.main__banner .swiper-next {
+  right: 16px;
+}
+
+/* CATEGORY EVENT */
+.category-event {
+  padding: 27px 0;
+}
+.category-event .ctg-list li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin: 13px 0;
+}
+.category-event .ctg-list li a img {
+  max-width: 50px;
+  min-width: 50px;
+  border-radius: 10px;
+}
+span.item-text {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+/* CATEGORY OBJECT */
+.category-object {}
+.category-object .obj-list {}
+.category-object .obj-list li {
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 90px;
+  border-bottom: 1px solid var(--sm-line);
+  box-sizing: border-box;
+}
+.category-object .obj-list li:not(:nth-of-type(4n)) {
+  border-right: 1px solid var(--sm-line);
+}
+.category-object .obj-list li:last-of-type a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  background-color: var(--secondary-color);
+}
+.category-object .obj-list li:last-of-type img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.category-object .obj-list li a {
+  display: block;
+  padding-top: 10px;
+  height: inherit;
+  box-sizing: border-box;
+}
+.category-object .obj-list li a img {
+  height: 46px;
+  width: 46px;
+}
