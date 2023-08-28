@@ -1,7 +1,21 @@
 /* POSTING */
-.posting-container {}
-.posting-container .posting-box {}
-.posting-container .posting-box {}
+.posting-container .posting-top {
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.total-number {}
+.sort {
+  gap: 24px;
+  cursor: pointer;
+}
+.sort span {}
+.sort span.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.posting-container .posting-box {
+  margin-bottom: 46px;
+}
 .posting-container .posting-image {
   height: 210px;
   border-radius: 10px;
@@ -19,4 +33,23 @@
   word-break: keep-all;
   line-height: 1.5;
 }
-
+.posting-container .profile-box {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.posting-container .profile-box .profile-image {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.posting-container .profile-box .profile-image img {
+  object-fit: cover;
+}
+.posting-container .profile-box .profile-nickname {
+  font-size: 12px;
+  color: #757575;
+}

@@ -16,6 +16,10 @@ body {
 .line--sm {
   border-bottom: 1px solid var(--sm-line);
 }
+.flex-box-align {
+  display: flex;
+  align-items: center;
+}
 
 /* HEADER */
 .header {
@@ -38,6 +42,10 @@ body {
   left: 16px;
   width: 24px;
   height: 24px;
+}
+#toggle-btn {
+  padding: 0;
+  cursor: pointer;
 }
 
 /* NAV */
