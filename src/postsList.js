@@ -34,4 +34,4 @@ fetchPost().then(posts => {
   //   )
   $(".posting-content").innerHTML = posts.map(post => postTemplate(post)).join('')
   $(".total-number").innerText = `총 ${posts.length} 개`;
-})
+})  
