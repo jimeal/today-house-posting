@@ -5,7 +5,7 @@ const postId = new URLSearchParams(window.location.search).get('id');
 
 
 async function fetchPost(postId) {
-  const response = await fetch(`http://localhost:3000/posts/${postId}`)
+  const response = await fetch(`https://tundra-freezing-barnacle.glitch.me/posts/${postId}`)
   const data = await response.json();
 
   return data;
