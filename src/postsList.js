@@ -20,7 +20,7 @@ const postTemplate = (post) => {
 `
 }
 async function fetchPost() {
-  const response = await fetch(`https://tundra-freezing-barnacle.glitch.me/posts`)
+  const response = await fetch(`https://today-house-server.glitch.me/posts`)
   const data = await response.json();
   return data;
 }

@@ -26,7 +26,7 @@ async function postSubmit(e) {
   e.preventDefault();
 
   try {
-    await fetch('https://tundra-freezing-barnacle.glitch.me/posts', {
+    await fetch('https://today-house-server.glitch.me/posts', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
