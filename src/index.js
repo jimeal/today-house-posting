@@ -8,3 +8,5 @@ $(".back-drop").addEventListener("click", () => {
   $(".side-bar").classList.toggle('open');
   $(".back-drop").style.display = "none";
 })
+
+

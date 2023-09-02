@@ -41,7 +41,7 @@
   box-shadow: inset 0 1px 2px rgba(0,0,0,.075);  /* .75 아니고 .075 주의 */
 }
 .input:focus {
-  border-color: #51a7e8 !important;  /* header #search 선택자를 덮어쓰기 위해서 사용 */
+  border-color: #51a7e8 !important;
   box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 5px rgba(81,167,232,.5);
 }
 .input::-webkit-input-placeholder { color: #cacaca; }
