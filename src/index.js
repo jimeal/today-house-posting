@@ -25,9 +25,6 @@ if(docHeight !== 0) {
 
 window.addEventListener("scroll", () => {
   const scrollPos = docEl.scrollTop;
-  const scrollBtm = docEl.offsetHeight;
-  console.log(docEl.offsetHeight);
-  console.log(scrollBtm);
   if(scrollPos > offset) {
     btn.className = 'visible';
   }else {
