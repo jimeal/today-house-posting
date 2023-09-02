@@ -1,59 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/global-colors.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/write.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;700;900&display=swap"
-      rel="stylesheet"
-      preload
-    />
+    <meta name="description" content="가구 · 소품은 물론 이제 가전, 주방용품, 데코/식물, 생활용품, 생필품, 반려동물, 캠핑용품, 실내운동까지 모두 &#39;스토어&#39;에 있어요!">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:site_name" content="라이프스타일 슈퍼앱, 오늘의집" />
+    <meta property="og:title" content="쇼핑을 쉽게, 스타일링은 즐겁게! 오늘의집 쇼핑" /><meta property="og:type" content="website" /><meta property="og:url" content="https://ohou.se/store?utm_source=brand_google&amp;utm_medium=inorganic&amp;utm_campaign=uc_web-all-all-google_search&amp;utm_content=e&amp;utm_term=%EC%98%A4%EB%8A%98%EC%9D%98%EC%A7%91&amp;source=14&amp;affect_type=UtmUrl&amp;bp_sub_id_2=search&amp;gclid=Cj0KCQjw6KunBhDxARIsAKFUGs85OTbCRwmTzoNT9uES0DlpKl22qubaXsTdewe8VMYIa-9oH2IiL_UaAnS2EALw_wcB" /><meta property="og:image" content="https://s3-ap-northeast-1.amazonaws.com/bucketplace-v2-development/uploads/default_images/open_graph_icon_2.png" /><meta property="og:description" content="가구 · 소품은 물론 이제 가전, 주방용품, 데코/식물, 생활용품, 생필품, 반려동물, 캠핑용품, 실내운동까지 모두 &#x27;스토어&#x27;에 있어요!" />
+    <title>집들이 상세</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="https://assets.ohou.se/web/assets/bookmark_icon/favicon_144x144.png"/>
+    <link href="https://assets.ohou.se/web/assets/favicon.png" rel="shortcut icon"/>
+
+    <!--Google Material Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>오늘의 집</title>
-    <script src="./src/common.js" type="module" defer></script>
+
+    <!-- SPOQA FONT -->
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./src/css/posts.css" />
+    <link rel="stylesheet" href="./src/css/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;700;900&display=swap" rel="stylesheet" preload />
+
+    <script src="./src/sub_index.js" type="module" defer></script>
     <script src="./src/write.js" type="module" defer></script>
   </head>
 
   <body>
-    <nav class="layout-navigation">
-      <div class="navigation">
-        <div class="before-btn">
-          <span class="material-symbols-outlined">
-            arrow_back_ios
-          </span>
+    <div class="container">
+
+      <!-- HEADER -->
+      <header class="header line--sm">
+        <div class="inner">
+          <h1 class="header__title logo">글쓰기</h1>
+          <!-- RETURN -->
+          <div class="header__left before-btn top-vertical-center">
+            <span class="material-symbols-outlined">
+              arrow_back_ios
+            </span>
+          </div>
+
+          <!-- PUBLISH -->
+          <div class="header__right top-vertical-center">
+            <button class="publish-btn">발행</button>
+          </div>
+
         </div>
 
-        <div class="side-bar-toggle">글쓰기</div>
+      </header>
 
-        <button class="publish-button">발행</button>
-      </div>
-    </nav>
-
-    <form class="post-form">
-      <div class="cover-image-wrapper">
-        <img class="cover-image" alt="업로드된 커버 사진" />
-        <div class="file-re-upload-wrapper">
-          <label for="cover-image-re-upload">사진 다시 올리기</label>
-          <input
-            type="file"
-            class="file-upload"
-            id="cover-image-re-upload"
-            multiple
-            accept=".jpg, .png, .jpeg, tiff, .gif"
-            style="display: none"
-          />
-        </div>
-        <div class="info-wrapper">
-          <span class="info-title">커버 사진을 업로드해주세요.</span>
-          <span class="info-content"
-            >* 권장 사이즈: 1920 x 1080, 최소 1400 x 930 (3:2 비율)</span
-          >
-        </div>
-        <div class="file-upload-wrapper">
+      <form class="post-form">
+        <!-- COVER IMAGE -->
+        <section class="cover-image__wrapper">
+          <img class="cover-image" alt="업로드된 커버 사진" />
+          
+          <div class="info__wrapper">
+            <span class="info-title">커버 사진을 업로드해주세요.</span>
+            <span class="info-content">* 권장 사이즈: 1920 x 1080, 최소 1400 x 930 (3:2 비율)</span>
+          </div>
+          <div class="file-re-upload-wrapper btn">
+            <label for="cover-image-re-upload">사진 다시 올리기</label>
+            <input
+              type="file"
+              class="file-upload"
+              id="cover-image-re-upload"
+              multiple
+              accept=".jpg, .png, .jpeg, tiff, .gif"
+              style="display: none"
+            />
+          </div>
+        <div class="file-upload-wrapper btn">
           <label for="cover-image-upload">커버 사진 추가하기</label>
           <input
             type="file"
@@ -64,17 +83,17 @@
             style="display: none"
           />
         </div>
-      </div>
+      </section>
 
-      <div class="title-wrapper">
-        <input class="title-input" placeholder="제목을 입력해주세요."  required />
-        <span class="word-count">
+      <section class="title-wrapper">
+        <input class="title-input input" placeholder="제목을 입력해주세요."  required />
+        <span class="word-count top-vertical-center">
           <span class="current-title-length">0</span> /
           <span class="max-title-length">30</span>
         </span>
-      </div>
+      </section>
 
-      <textarea class="content-input" placeholder="내용을 입력해주세요."></textarea>
-    </section>
+      <textarea class="content-input input" placeholder="내용을 입력해주세요."></textarea>
+    </div>
   </body>
 </html>

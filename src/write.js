@@ -1,10 +1,9 @@
 export const POST_MAX_FILE_SIZE = 1000 * 1000 * 1;
 const $ = (selector) => document.querySelector(selector);
 
-// $(".content-input")
-// $(".current-title-length")
-// $(".max-title-length")
-
+$(".publish-btn").addEventListener('click', () => {
+  $(".post-form").dispatchEvent(new Event('submit'))
+})
 $(".title-input").addEventListener('input', (e) => {
   let targetValue = e.target.value;
   let targetValueLength = targetValue.length;
@@ -18,9 +17,6 @@ $(".title-input").addEventListener('input', (e) => {
 })
 
 $(".post-form").addEventListener('submit', postSubmit)
-$(".publish-button").addEventListener('click', () => {
-  $(".post-form").dispatchEvent(new Event('submit'))
-})
 
 async function postSubmit(e) {
   e.preventDefault();
@@ -62,5 +58,8 @@ function imgUpload(e) {
     $(".cover-image").src = e.target.result;
     $(".cover-image").style.display = "block";
     $(".file-re-upload-wrapper").style.display = "block";
+    $(".file-upload-wrapper").style.display = "none";
+    $(".info-title").style.display = "none";
+    $(".info__wrapper").style.paddingTop = 14 + "px";
   }
-}
+} 

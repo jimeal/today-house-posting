@@ -53,6 +53,14 @@ h2.posting-title {
   width: 24px;
   height: 24px;
 }
+.header__right {
+  position: absolute;
+  right: 16px;
+}
+.publish-btn {
+  color: var(--primary-color);
+  font-size: 16px;
+}
 #toggle-btn {
   padding: 0;
   cursor: pointer;
