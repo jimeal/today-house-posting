@@ -26,6 +26,7 @@
 }
 .posting-container .posting-title {
   text-align: center;
+  font-size: 16px;
 }
 .posting-container .profile-box {
   margin-top: 14px;
@@ -148,7 +149,7 @@
 .title-wrapper .title-input {
   height: inherit;
   border: 0;
-  width: 100%;
+  width: 83%;
 }
 .title-wrapper .word-count {
   position: absolute;
