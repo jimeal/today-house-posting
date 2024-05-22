@@ -27,11 +27,6 @@ async function fetchPost() {
 
 fetchPost().then(posts => {
   
-  // $(".posting-content").insertAdjacentHTML(
-  //   'beforebegin', posts.map(post => {
-  //     postTemplate(post)
-  //   }).join('')
-  //   )
-  $(".posting-content").innerHTML = posts.map(post => postTemplate(post)).join('')
+  $(".posting-content").innerHTML = posts.map(post => postTemplate(post)).reverse().join('')
   $(".total-number").innerText = `총 ${posts.length} 개`;
 })  
